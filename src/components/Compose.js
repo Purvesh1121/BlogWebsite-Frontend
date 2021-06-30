@@ -105,7 +105,7 @@ const Compose = () => {
             </button>
           </Link>
         </div>
-        <p className="text-center">{JSON.stringify(post)}</p>
+        {/* <p className="text-center">{JSON.stringify(post)}</p> */}
       </div>
     );
   };
