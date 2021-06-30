@@ -90,7 +90,7 @@ const Card = ({ post }) => {
             >
               Continue reading
             </a> */}
-          <Link to={`/post/${post._id}`} target="_blank">
+          <Link to={`/post/${post._id}`}  >
             Read More
           </Link>
         </div>
