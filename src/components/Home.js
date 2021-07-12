@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const loadAllPost = () => {
     getAllPosts().then((data) => {
@@ -16,6 +17,7 @@ const Home = () => {
         setError(data.error);
       } else {
         setPosts(data);
+        setLoading(false);
       }
     });
   };
@@ -23,6 +25,17 @@ const Home = () => {
   useEffect(() => {
     loadAllPost();
   }, []);
+
+  const showLoading = () => {
+    return (
+      <h3
+        className="text-center text-primary pt-4"
+        style={{ display: loading ? "" : "none" }}
+      >
+        Loading...
+      </h3>
+    );
+  };
 
   return (
     <Base className="p-2">
@@ -32,6 +45,7 @@ const Home = () => {
           <button className="btn btn-outline-primary">Compose</button>
         </Link>
       </div>
+      {showLoading()}
       <div className="row mt-4">
         {posts.map((post, index) => {
           return <Card key={index} post={post} />;
