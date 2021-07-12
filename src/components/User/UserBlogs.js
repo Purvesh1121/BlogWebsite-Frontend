@@ -17,6 +17,7 @@ const UserBlog = () => {
           console.log(data.error);
         } else {
           setPosts(data);
+          setLoading(false);
         }
       })
       .catch((err) => console.log(err));
