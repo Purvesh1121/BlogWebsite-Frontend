@@ -78,7 +78,7 @@ const Card = ({ post }) => {
             "
       >
         <div class="col p-4 d-flex flex-column position-static">
-          <h3 class="mb-0">{post.title.substring(0, 30) + "..."}</h3>
+          <h4 class="mb-0 upper-text font">{post.title.substring(0, 30) + "..."}</h4>
           <div class="mb-1 text-muted">{showDate(post.createdAt)}</div>
           <p class="mb-auto text-secondary">
             {post.content.substring(0, 50) + " ..."}

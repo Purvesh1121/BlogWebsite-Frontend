@@ -59,3 +59,21 @@ html {
     white-space: pre-line;
 }
 
+.font {
+  font-family: "Mercury SSm A", "Mercury SSm B", Georgia, Times,
+    "Times New Roman", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑",
+    宋体, SimSun, STXihei, "华文细黑", serif;
+    line-height: 1.5;
+}
+
+.blue {
+  color: #207398;
+}
+
+.red {
+  color: #B9345A ;
+}
+
+.upper-text {
+  text-transform: uppercase;
+}

@@ -40,7 +40,7 @@ const Home = () => {
   return (
     <Base className="p-2">
       <div className="text-center">
-        <h1 className="text-success">All Blogs</h1>
+        <h1 className="font"><span className="blue">All</span> <span className="red"> Blogs</span></h1>
         <Link to="/user/compose">
           <button className="btn btn-outline-primary">Compose</button>
         </Link>

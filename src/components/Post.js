@@ -35,9 +35,9 @@ const Post = ({ match }) => {
 
   const postBody = () => {
     return (
-      <div class="container-fluid px-5">
-        <h1 class="text-center post-title">{info.title}</h1>
-        <p class="post-body text-left">{info.content}</p>
+      <div class="container-fluid px-lg-5 px-2">
+        <h2 class="text-lg-center text-left post-title font">{info.title}</h2>
+        <p class="post-body text-left mt-4">{info.content}</p>
         <p class="text-left">
           <span class="text-danger">By</span>:{" "}
           <span class="text-warning">{info.author}</span>
